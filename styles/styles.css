@@ -15,10 +15,12 @@
 body{
     background-color: black;
     height: 100vh;
+    
 }
 
 .interface{
     max-width: 1280px;
+    height: 100%;
     margin: 0 auto;
 
 }
@@ -38,6 +40,84 @@ body{
     border-radius: 10px;
     cursor: pointer;
     transition: .2s;
+}
+
+h2.titulo{
+    color: white;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: silver;
+}
+
+
+#modal{
+    position: fixed;
+    top: 45px;
+    left: 30%;
+    width: 400px;
+    height: 400px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+#modal:hover{
+    box-shadow: 0 0 10px silver;
+}
+
+#modal .titulo-modal{
+    font-size: 20px;
+    color: silver;
+}
+
+#modal .titulo-modal:hover{
+    color: goldenrod;
+}
+
+#modal .conteudo-modal{
+    font-size: 20px;
+    color: silver;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal .conteudo-modal a{
+    color: silver;
+    text-decoration: none;
+}
+
+#modal .conteudo-modal .redes-i{
+    padding: 10px;
+}
+
+#modal .conteudo-modal i:hover{
+    cursor: pointer;
+    color: goldenrod;
+}
+
+#modal .conteudo-modal .btn-modal{
+    padding:7px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: none;
+    background-color: goldenrod;
+
+}
+
+#modal .conteudo-modal .btn-modal:hover{
+    cursor: pointer;
+    background-color: silver;
+    transform: scale(1.05);
 }
 
 /* Estilo Cabeçalho */
@@ -122,6 +202,40 @@ section.topo-do-site .flex{
     
 }
 
+.ferramentas-box{
+    display: flex;
+    justify-content: space-around;
+}
+
+.ferramentas-box .ferramentas{
+    display: flex;
+    flex-direction: row;
+}
+
+.ferramentas-box .ferramentas .ferramentas-item{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.ferramentas-box .ferramentas .ferramentas-item:hover{
+    transform: scale(1.1);
+}
+
+
+.ferramentas-box .ferramentas i{
+    color: rgba(218, 165, 32, 0.253);
+    font-size: 70px;
+    
+}
+
+.ferramentas-box .ferramentas i:hover{
+    color: goldenrod;
+}
+
 .btn-align{
     display: flex;
     align-items: center;
@@ -149,4 +263,171 @@ section.topo-do-site .flex{
         top: 30px;
         
     }
+}
+
+/* Estilo Aprendizados */
+
+section.meus-aprendizados{
+    padding: 40px 4%;
+
+}
+
+section.meus-aprendizados .titulo{
+    margin-top: 20px;
+}
+
+section.meus-aprendizados .flex{
+    gap: 10px;
+}
+
+.meus-aprendizados .aprendizados-box{
+    color: white;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+}
+
+.meus-aprendizados .aprendizados-box:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+    border: 2px solid silver;
+    box-shadow: 0px 0px 10px rgba(192, 192, 192, 0.671);
+}
+
+.meus-aprendizados .aprendizados-box i{
+    font-size: 70px;
+    color: goldenrod;
+}
+
+.meus-aprendizados .aprendizados-box h3{
+    font-size: 28px;
+    color: silver;
+    text-shadow: 0px 0px 2px rgba(192, 192, 192, 0.911);
+    margin: 14px 0;
+}
+
+.tecnologia{
+    color: goldenrod;
+}
+
+/* Estilos Sobre */
+
+section.sobre{
+    padding: 40px 4%;
+
+}
+
+section.sobre img{
+    border-radius: 10px;
+}
+
+section.sobre .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 60px   ;
+}
+
+.sobre .txt-sobre{
+    color: white;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: silver;
+    display: block;
+    
+}
+
+.sobre .txt-sobre{
+    margin: 20px 0;
+    text-align: justify;
+    font-size: 19px;
+}
+
+.sobre .txt-sobre a{
+    text-decoration: none;
+    color: goldenrod;
+}
+
+.sobre .txt-sobre a:hover{
+    color: silver;
+}
+
+.sobre .txt-sobre .btn-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    background-color: silver;
+    margin-top: 10px;
+}
+
+.sobre .txt-sobre .btn-social button:hover{
+    background-color: goldenrod;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.sobre .txt-sobre .btn-social button i{
+    font-size: 35px;
+    color: black;
+}
+
+/* Estilos Portifólio */
+
+section.portfolio{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px rgba(192, 192, 192, 0.137);
+}
+
+section.portfolio .flex{
+    justify-content: space-around;
+}
+
+section.portfolio .interface h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.sub-titulo{
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-titulo a{
+    text-decoration: none;
+    color: goldenrod;
+}
+
+.sub-titulo a:hover{
+    color: silver;
+}
+
+.img-port{
+    width: 560px;
+    height: 460px;
+    background-color: silver;
+    box-shadow: 0px 0px 6px rgba(192, 192, 192, 0.911);
+}
+
+.img-port:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
