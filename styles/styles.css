@@ -431,3 +431,59 @@ section.portfolio .interface h3{
     transform: scale(1.1);
     cursor: pointer;
 }
+
+.port-imgs{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.port-imgs img{
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(192, 192, 192, 0.973);
+}
+
+.port-imgs img:hover{
+    transform: scale(1.05);
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1020px ){
+    .flex{
+        flex-direction: column;
+    }
+    
+    .menu-desktop{
+        display: none;
+    }
+    #modal{
+        width: 350px;
+        height: 300px;
+        left: 40px;
+    }
+    .txt-topo-site h1{
+        font-size: 30px;
+    }
+
+    .descricao-topo{
+        font-size: 16px;
+    } 
+
+    .ferramentas-box{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .img-port{
+        display: none;
+        
+    }
+    .port-imgs{
+        display: flex;
+    }
+}
