@@ -29,6 +29,11 @@ body{
     display: flex;
 }
 
+.efeito-txt-topo, .efeito-ferramentas, 
+.titulo-aprendizados, .conteudo-aprendizados,
+.efeito-img-sobre, .efeito-txt-sobre{
+    visibility: hidden;
+}
 
 .btn-contato button{
     width: 150px;
@@ -55,17 +60,16 @@ h2.titulo span{
 
 #modal{
     position: fixed;
-    top: 45px;
+    top: 15px;
     left: 30%;
     width: 400px;
-    height: 400px;
+    height: 200px;
     display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: black;
     color: white;
-    gap: 20px;
     border-radius: 10px;
 }
 
@@ -74,7 +78,6 @@ h2.titulo span{
 }
 
 #modal .titulo-modal{
-    font-size: 20px;
     color: silver;
 }
 
@@ -83,7 +86,6 @@ h2.titulo span{
 }
 
 #modal .conteudo-modal{
-    font-size: 20px;
     color: silver;
     display: flex;
     flex-direction: column;
@@ -449,6 +451,7 @@ section.portfolio .interface h3{
 
 .port-imgs img:hover{
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 /* Media queries */
@@ -463,8 +466,17 @@ section.portfolio .interface h3{
     }
     #modal{
         width: 350px;
-        height: 300px;
+        height: 150px;
         left: 40px;
+    }
+
+    #modal .conteudo-modal .redes-i{
+        padding: 5px;
+    }
+
+    #modal .conteudo-modal .btn-modal{
+        padding: 5px;
+        font-size: 16px;
     }
     .txt-topo-site h1{
         font-size: 30px;
